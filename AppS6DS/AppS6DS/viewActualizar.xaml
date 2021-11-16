@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS6DS.viewActualizar"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Actualizar Información"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtCodigoActualizar" Placeholder="Ingrese el Codigo a Actualizar"/>
+            <Entry x:Name="txtNombreActualizar" Placeholder="Ingrese el Nombre Actualizar"/>
+            <Entry x:Name="txtApellidoActualizar" Placeholder="Ingrese el Apelido Actualizar"/>
+            <Entry x:Name="txtEdadActualizar" Placeholder="Ingrese la Edad a Actualizar" Keyboard="Numeric"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" 
+                        Grid.Column="0" 
+                        Text="Actualizar Datos" 
+                        x:Name="btnActualizarDatos" 
+                        Clicked="btnActualizarDatos_Clicked">                    
+                </Button>
+                <Button Grid.Row="0" 
+                        Grid.Column="1" Text="Regresar" 
+                        x:Name="btnRegresar" 
+                        Clicked="btnRegresar_Clicked">                   
+                </Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
